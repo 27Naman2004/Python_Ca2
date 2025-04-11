@@ -1,4 +1,5 @@
 🔌 Electricity Consumption Analysis
+
 This project focuses on exploring and visualizing electricity consumption data to uncover patterns, trends, and insights. Using Python and key libraries like Pandas, Matplotlib, and Seaborn, the data is cleaned, analyzed, and presented through easy-to-understand plots and summaries.
 
 📁 Dataset
