@@ -1,99 +1,105 @@
-🔌 Electricity Consumption Analysis
+# 🔌 Electricity Consumption Analysis (Streamlit App Version)
 
-This project focuses on exploring and visualizing electricity consumption data to uncover patterns, trends, and insights. Using Python and key libraries like Pandas, Matplotlib, and Seaborn, the data is cleaned, analyzed, and presented through easy-to-understand plots and summaries.
+This project explores and visualizes electricity consumption patterns using an interactive **Streamlit web application**. It allows users to explore trends, relationships, and anomalies in electricity usage through a user-friendly interface.
 
-📁 Dataset
-The dataset used is CDCF.csv, which contains the following important columns:
+---
 
-Circle
+## 📁 Dataset
+The dataset used is `CDCF.csv`, which contains the following key columns:
 
-Division
+- **Circle**
+- **Division**
+- **SubDivision**
+- **Area**
+- **Units**
+- **Load**
+- **Total Services**
+- **Billed Services**
+- **Category Description**
+- **Month** *(if available)*
 
-SubDivision
+---
 
-Area
+## 🎯 Objectives
+The Streamlit app supports analysis for the following objectives:
 
-Units
+1. **Relationship between Load and Units Consumed**
+2. **Top 10 Areas with the Highest Electricity Consumption**
+3. **Comparison of Billed Services vs Total Services**
+4. **Electricity Consumption by Circle**
+5. **Distribution of Billed Services**
+6. **Electricity Consumption by Consumer Category**
+7. **Distribution of Electrical Load**
+8. **(Optional)** Monthly Trend of Electricity Consumption (if data is available)
 
-Load
+Users can interactively select these objectives from dropdowns or sidebars in the app.
 
-Total Services
+---
 
-Billed Services
+## 📊 Visualizations Included
+The following types of visualizations are available:
 
-Category Description
+- **Bar Plot**: Electricity consumption by Circle
+- **Scatter Plot**: Total Services vs Billed Services
+- **Histogram**: Distribution of Load
+- **Bar Chart**: Electricity usage by Consumer Category
+- **Heatmap**: Correlation between Units, Load, Services, etc.
+- **Bar Chart**: Top 10 Areas by electricity consumption
+- **Line Plot** *(optional)*: Monthly electricity usage trend
+- **Box Plot**: Distribution of Billed Services
+- **Scatter Plot**: Relationship between Load and Units
 
-Month (if available)
+---
 
-🎯 Objectives
-We performed the following analyses:
+## 🧹 Data Cleaning & Preprocessing
+The following preprocessing steps are performed:
 
-Relationship between Load and Units Consumed
+- Missing values are handled via **mean**, **median**, or **custom value** (user-selectable)
+- Columns are cast to proper data types
+- Duplicate records are removed
+- Column names are simplified where necessary
+- Filters for categories and top areas for clean and informative visuals
 
-Top 10 Areas with the Highest Electricity Consumption
+---
 
-Comparison of Billed Services vs Total Services
+## 🛠️ Technologies Used
 
-Electricity Consumption by Circle
+- **Python**
+- **Streamlit** – for building the interactive UI
+- **Pandas** – for data loading and manipulation
+- **Matplotlib** – for visualizations
+- **Seaborn** – for advanced visualizations and styling
 
-Distribution of Billed Services
+---
 
-Electricity Consumption by Consumer Category
+## ▶️ How to Run
 
-Distribution of Electrical Load
+1. Install the required packages:
+   ```bash
+   pip install pandas matplotlib seaborn streamlit
+   ```
 
-(Optional) Monthly Trend of Electricity Consumption
+2. Run the app:
+   ```bash
+   streamlit run app.py
+   ```
 
-📊 Visualizations
-To help understand the data better, the following visualizations were created:
+3. Use the sidebar and dropdowns to select the type of analysis or visualization.
 
-Bar Plot: Total electricity consumption by Circle
+---
 
-Scatter Plot: Total Services vs Billed Services
+## 📌 Conclusion
+This app makes electricity consumption analysis simple and accessible. It reveals:
 
-Histogram: Distribution of Load
+- Which regions and areas consume the most electricity
+- The relationship between load and units
+- Gaps between billed and total services
+- Differences across consumer categories
 
-Bar Chart: Electricity usage by Consumer Category
+Useful for:
+- Policy makers
+- Electricity boards
+- Data analysts
+- Students exploring data science
 
-Heatmap: Correlation between Units, Load, Services, etc.
 
-Bar Chart: Top 10 Areas by electricity consumption
-
-Line Plot (if Month data exists): Monthly electricity usage trend
-
-Box Plot: Distribution of Billed Services
-
-Scatter Plot: Relationship between Load and Units
-
-🧹 Data Cleaning & Preprocessing
-Handled missing values using mean or median imputation
-
-Converted columns to proper data types
-
-Removed duplicate entries
-
-Simplified column names where needed
-
-Filtered top categories and areas for cleaner plots
-
-🛠️ Technologies Used
-Python
-
-Pandas – for data loading and preprocessing
-
-Matplotlib – for basic charts
-
-Seaborn – for attractive statistical visualizations
-
-📌 Conclusion
-This project helps understand how electricity is consumed in different regions and categories. It highlights:
-
-Which areas consume the most
-
-How billed services compare to total services
-
-Correlations between load and units
-
-Differences by consumer categories
-
-These insights can be useful for policy makers, electricity boards, and analysts looking to optimize power distribution and identify abnormal consumption patterns.# Python_Ca2
