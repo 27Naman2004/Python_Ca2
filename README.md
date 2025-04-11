@@ -1,4 +1,4 @@
-# 🔌 Electricity Consumption Analysis (Streamlit App Version)
+# 🔌 Electricity Consumption Analysis (With Streamlit App Version)
 
 This project explores and visualizes electricity consumption patterns using an interactive **Streamlit web application**. It allows users to explore trends, relationships, and anomalies in electricity usage through a user-friendly interface.
 
